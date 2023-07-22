@@ -1,6 +1,6 @@
 <img align = right height = 120 width = 120 src = https://logos-world.net/wp-content/uploads/2021/02/JP-Morgan-Chase-Emblem.png>
 
-#  JPMorgan-Chase-Virtual-Internship
+#  JPMorgan Chase Virtual Internship
 
 This repository contains the submitted patch files of the various tasks assigned by [JPMorgan Chase &amp; Co. - Software Engineering Virtual Internship](https://www.theforage.com/virtual-internships/prototype/R5iK7HMxJGBgaSbvk/JP-Morgan-Banking-Technology-Virtual-Program?ref=bdJ8wgGEHo3HaNjCF)
 
