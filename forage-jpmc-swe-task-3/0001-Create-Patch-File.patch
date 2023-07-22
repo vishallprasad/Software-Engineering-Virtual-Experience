@@ -1,0 +1,375 @@
+From 20b47aae4ec98de5c5d4180625b8a688ce6af444 Mon Sep 17 00:00:00 2001
+From: Vishal Prasad <iamvishalprasad@yahoo.com>
+Date: Wed, 5 Jul 2023 22:35:58 +0530
+Subject: [PATCH] Create Patch File
+
+---
+ package-lock.json      | 139 +++++++++--------------------------------
+ package.json           |   4 +-
+ src/DataManipulator.ts |  40 ++++++++----
+ src/Graph.tsx          |  41 ++++++------
+ 4 files changed, 80 insertions(+), 144 deletions(-)
+
+diff --git a/package-lock.json b/package-lock.json
+index 8135a72..3f9ad6c 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -8,8 +8,8 @@
+       "name": "bank-merge-co-task-3",
+       "version": "0.1.0",
+       "dependencies": {
+-        "@finos/perspective": "^1.6.2",
+-        "@finos/perspective-viewer": "^1.6.2",
++        "@finos/perspective": "^1.9.4",
++        "@finos/perspective-viewer": "^1.9.4",
+         "@finos/perspective-viewer-d3fc": "^1.6.2",
+         "@finos/perspective-viewer-datagrid": "^1.6.2",
+         "@types/jest": "^23.3.13",
+@@ -2129,11 +2129,11 @@
+       }
+     },
+     "node_modules/@finos/perspective": {
+-      "version": "1.6.2",
+-      "resolved": "https://registry.npmjs.org/@finos/perspective/-/perspective-1.6.2.tgz",
+-      "integrity": "sha512-SdHIPe3AiLEigkbYEMG9+Tsxq5tnsoC4Ch0X1a13QM3vRfw+VUnNj0TioBYC4fwRIKO4NoS3dobbYmkNc0piAQ==",
++      "version": "1.9.4",
++      "resolved": "https://registry.npmjs.org/@finos/perspective/-/perspective-1.9.4.tgz",
++      "integrity": "sha512-rW6xcC/IUp+ffQ0/1Lv8gY/FbrtEGVt1FmJRG3Un0DAAya5xxd4z9yb6HdDklL9UbG9mYL16ZfqNLNB70R6+0w==",
+       "dependencies": {
+-        "fflate": "^0.7.2",
++        "fflate": "^0.7.4",
+         "ws": "^6.1.2"
+       },
+       "engines": {
+@@ -2141,17 +2141,13 @@
+       }
+     },
+     "node_modules/@finos/perspective-viewer": {
+-      "version": "1.6.2",
+-      "resolved": "https://registry.npmjs.org/@finos/perspective-viewer/-/perspective-viewer-1.6.2.tgz",
+-      "integrity": "sha512-X6SFp3IpGmoELz8NuXDrm70RXzulImZvMeTmN3Jrfb4zm2Mh/tEjt/3DJpPcRc1YAgo+H1JdtyYFVCKc+zzO8w==",
++      "version": "1.9.4",
++      "resolved": "https://registry.npmjs.org/@finos/perspective-viewer/-/perspective-viewer-1.9.4.tgz",
++      "integrity": "sha512-1as9MQVQzBHmBZJc1XWV4/TJqntGa8myYAtuj9edkeBH6Uvvkybg/pJwCr7GTAK/S1tb22d+E9yO9X42uv6Xew==",
+       "dependencies": {
+-        "@finos/perspective": "^1.6.2",
+-        "fflate": "^0.7.2",
+-        "mobile-drag-drop-shadow-dom": "3.0.0",
+-        "monaco-editor": "0.24.0"
+-      },
+-      "optionalDependencies": {
+-        "monaco-editor-webpack-plugin": "3.1.0"
++        "@finos/perspective": "^1.9.4",
++        "fflate": "^0.7.4",
++        "mobile-drag-drop-shadow-dom": "3.0.0"
+       }
+     },
+     "node_modules/@finos/perspective-viewer-d3fc": {
+@@ -7594,9 +7590,9 @@
+       }
+     },
+     "node_modules/fflate": {
+-      "version": "0.7.3",
+-      "resolved": "https://registry.npmjs.org/fflate/-/fflate-0.7.3.tgz",
+-      "integrity": "sha512-0Zz1jOzJWERhyhsimS54VTqOteCNwRtIlh8isdL0AXLo0g7xNTfTL7oWrkmCnPhZGocKIkWHBistBrrpoNH3aw=="
++      "version": "0.7.4",
++      "resolved": "https://registry.npmjs.org/fflate/-/fflate-0.7.4.tgz",
++      "integrity": "sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw=="
+     },
+     "node_modules/figgy-pudding": {
+       "version": "3.5.2",
+@@ -11962,50 +11958,6 @@
+       "resolved": "https://registry.npmjs.org/mobile-drag-drop-shadow-dom/-/mobile-drag-drop-shadow-dom-3.0.0.tgz",
+       "integrity": "sha512-cNDH83lfYhllESH+ddjyxXdnjunLec0ldnygm3nWY1zMtfeA1tHoVsAasZy63QhnRuN4ps0pGuL8TolUK/sYjA=="
+     },
+-    "node_modules/monaco-editor": {
+-      "version": "0.24.0",
+-      "resolved": "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.24.0.tgz",
+-      "integrity": "sha512-o1f0Lz6ABFNTtnEqqqvlY9qzNx24rQZx1RgYNQ8SkWkE+Ka63keHH/RqxQ4QhN4fs/UYOnvAtEUZsPrzccH++A=="
+-    },
+-    "node_modules/monaco-editor-webpack-plugin": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-3.1.0.tgz",
+-      "integrity": "sha512-TP5NkCAV0OeFTry5k/d60KR7CkhTXL4kgJKtE3BzjgbDb5TGEPEhoKmHBrSa6r7Oc0sNbPLZhKD/TP2ig7A+/A==",
+-      "optional": true,
+-      "dependencies": {
+-        "loader-utils": "^2.0.0"
+-      },
+-      "peerDependencies": {
+-        "monaco-editor": "0.22.x || 0.23.x || 0.24.x",
+-        "webpack": "^4.5.0 || 5.x"
+-      }
+-    },
+-    "node_modules/monaco-editor-webpack-plugin/node_modules/json5": {
+-      "version": "2.2.1",
+-      "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.1.tgz",
+-      "integrity": "sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==",
+-      "optional": true,
+-      "bin": {
+-        "json5": "lib/cli.js"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/monaco-editor-webpack-plugin/node_modules/loader-utils": {
+-      "version": "2.0.2",
+-      "resolved": "https://registry.npmjs.org/loader-utils/-/loader-utils-2.0.2.tgz",
+-      "integrity": "sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==",
+-      "optional": true,
+-      "dependencies": {
+-        "big.js": "^5.2.2",
+-        "emojis-list": "^3.0.0",
+-        "json5": "^2.1.2"
+-      },
+-      "engines": {
+-        "node": ">=8.9.0"
+-      }
+-    },
+     "node_modules/move-concurrently": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz",
+@@ -21827,24 +21779,22 @@
+       }
+     },
+     "@finos/perspective": {
+-      "version": "1.6.2",
+-      "resolved": "https://registry.npmjs.org/@finos/perspective/-/perspective-1.6.2.tgz",
+-      "integrity": "sha512-SdHIPe3AiLEigkbYEMG9+Tsxq5tnsoC4Ch0X1a13QM3vRfw+VUnNj0TioBYC4fwRIKO4NoS3dobbYmkNc0piAQ==",
++      "version": "1.9.4",
++      "resolved": "https://registry.npmjs.org/@finos/perspective/-/perspective-1.9.4.tgz",
++      "integrity": "sha512-rW6xcC/IUp+ffQ0/1Lv8gY/FbrtEGVt1FmJRG3Un0DAAya5xxd4z9yb6HdDklL9UbG9mYL16ZfqNLNB70R6+0w==",
+       "requires": {
+-        "fflate": "^0.7.2",
++        "fflate": "^0.7.4",
+         "ws": "^6.1.2"
+       }
+     },
+     "@finos/perspective-viewer": {
+-      "version": "1.6.2",
+-      "resolved": "https://registry.npmjs.org/@finos/perspective-viewer/-/perspective-viewer-1.6.2.tgz",
+-      "integrity": "sha512-X6SFp3IpGmoELz8NuXDrm70RXzulImZvMeTmN3Jrfb4zm2Mh/tEjt/3DJpPcRc1YAgo+H1JdtyYFVCKc+zzO8w==",
++      "version": "1.9.4",
++      "resolved": "https://registry.npmjs.org/@finos/perspective-viewer/-/perspective-viewer-1.9.4.tgz",
++      "integrity": "sha512-1as9MQVQzBHmBZJc1XWV4/TJqntGa8myYAtuj9edkeBH6Uvvkybg/pJwCr7GTAK/S1tb22d+E9yO9X42uv6Xew==",
+       "requires": {
+-        "@finos/perspective": "^1.6.2",
+-        "fflate": "^0.7.2",
+-        "mobile-drag-drop-shadow-dom": "3.0.0",
+-        "monaco-editor": "0.24.0",
+-        "monaco-editor-webpack-plugin": "3.1.0"
++        "@finos/perspective": "^1.9.4",
++        "fflate": "^0.7.4",
++        "mobile-drag-drop-shadow-dom": "3.0.0"
+       }
+     },
+     "@finos/perspective-viewer-d3fc": {
+@@ -26244,9 +26194,9 @@
+       }
+     },
+     "fflate": {
+-      "version": "0.7.3",
+-      "resolved": "https://registry.npmjs.org/fflate/-/fflate-0.7.3.tgz",
+-      "integrity": "sha512-0Zz1jOzJWERhyhsimS54VTqOteCNwRtIlh8isdL0AXLo0g7xNTfTL7oWrkmCnPhZGocKIkWHBistBrrpoNH3aw=="
++      "version": "0.7.4",
++      "resolved": "https://registry.npmjs.org/fflate/-/fflate-0.7.4.tgz",
++      "integrity": "sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw=="
+     },
+     "figgy-pudding": {
+       "version": "3.5.2",
+@@ -29687,39 +29637,6 @@
+       "resolved": "https://registry.npmjs.org/mobile-drag-drop-shadow-dom/-/mobile-drag-drop-shadow-dom-3.0.0.tgz",
+       "integrity": "sha512-cNDH83lfYhllESH+ddjyxXdnjunLec0ldnygm3nWY1zMtfeA1tHoVsAasZy63QhnRuN4ps0pGuL8TolUK/sYjA=="
+     },
+-    "monaco-editor": {
+-      "version": "0.24.0",
+-      "resolved": "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.24.0.tgz",
+-      "integrity": "sha512-o1f0Lz6ABFNTtnEqqqvlY9qzNx24rQZx1RgYNQ8SkWkE+Ka63keHH/RqxQ4QhN4fs/UYOnvAtEUZsPrzccH++A=="
+-    },
+-    "monaco-editor-webpack-plugin": {
+-      "version": "3.1.0",
+-      "resolved": "https://registry.npmjs.org/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-3.1.0.tgz",
+-      "integrity": "sha512-TP5NkCAV0OeFTry5k/d60KR7CkhTXL4kgJKtE3BzjgbDb5TGEPEhoKmHBrSa6r7Oc0sNbPLZhKD/TP2ig7A+/A==",
+-      "optional": true,
+-      "requires": {
+-        "loader-utils": "^2.0.0"
+-      },
+-      "dependencies": {
+-        "json5": {
+-          "version": "2.2.1",
+-          "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.1.tgz",
+-          "integrity": "sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==",
+-          "optional": true
+-        },
+-        "loader-utils": {
+-          "version": "2.0.2",
+-          "resolved": "https://registry.npmjs.org/loader-utils/-/loader-utils-2.0.2.tgz",
+-          "integrity": "sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==",
+-          "optional": true,
+-          "requires": {
+-            "big.js": "^5.2.2",
+-            "emojis-list": "^3.0.0",
+-            "json5": "^2.1.2"
+-          }
+-        }
+-      }
+-    },
+     "move-concurrently": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz",
+diff --git a/package.json b/package.json
+index 8ca3a60..7b87979 100644
+--- a/package.json
++++ b/package.json
+@@ -3,8 +3,8 @@
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+-    "@finos/perspective": "^1.6.2",
+-    "@finos/perspective-viewer": "^1.6.2",
++    "@finos/perspective": "^1.9.4",
++    "@finos/perspective-viewer": "^1.9.4",
+     "@finos/perspective-viewer-d3fc": "^1.6.2",
+     "@finos/perspective-viewer-datagrid": "^1.6.2",
+     "@types/jest": "^23.3.13",
+diff --git a/src/DataManipulator.ts b/src/DataManipulator.ts
+index 7f62295..12b504a 100644
+--- a/src/DataManipulator.ts
++++ b/src/DataManipulator.ts
+@@ -1,20 +1,34 @@
+ import { ServerRespond } from './DataStreamer';
+-
++ 
+ export interface Row {
+-  stock: string,
+-  top_ask_price: number,
++  [key: string]: string|any;
++  price_abc: number,
++  price_def: number,
++  ratio: number,
+   timestamp: Date,
++  upper_bound: number,
++  lower_bound: number,
++  trigger_alert: number | undefined,
+ }
+-
+-
++ 
++ 
+ export class DataManipulator {
+-  static generateRow(serverResponds: ServerRespond[]) {
+-    return serverResponds.map((el: any) => {
+-      return {
+-        stock: el.stock,
+-        top_ask_price: el.top_ask && el.top_ask.price || 0,
+-        timestamp: el.timestamp,
+-      };
+-    })
++  static generateRow(serverRespond: ServerRespond[]): Row {
++    const priceABC= (serverRespond[0].top_ask.price+serverRespond[0].top_bid.price)/2;
++    const priceDEF= (serverRespond[1].top_ask.price+serverRespond[1].top_bid.price)/2;
++    const ratio = priceABC/priceDEF;
++    const upperBound=1+0.05;
++    const lowerBound=1-0.05;
++    return {
++      price_abc: priceABC,
++      price_def: priceDEF,
++      ratio,
++      timestamp: serverRespond[0].timestamp > serverRespond[1].timestamp ?
++        serverRespond[0].timestamp : serverRespond[1].timestamp,
++      upper_bound: upperBound,
++      lower_bound: lowerBound,
++      trigger_alert: (ratio > upperBound || ratio < lowerBound) ? ratio : undefined,
++ 
++    };
+   }
+ }
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 277797d..b398afa 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -3,32 +3,35 @@ import { Table } from '@finos/perspective';
+ import { ServerRespond } from './DataStreamer';
+ import { DataManipulator } from './DataManipulator';
+ import './Graph.css';
+-
++ 
+ interface IProps {
+   data: ServerRespond[],
+ }
+-
++ 
+ interface PerspectiveViewerElement extends HTMLElement {
+   load: (table: Table) => void,
+ }
+ class Graph extends Component<IProps, {}> {
+   table: Table | undefined;
+-
++ 
+   render() {
+     return React.createElement('perspective-viewer');
+   }
+-
++ 
+   componentDidMount() {
+     // Get element from the DOM.
+     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+-
++ 
+     const schema = {
+-      stock: 'string',
+-      top_ask_price: 'float',
+-      top_bid_price: 'float',
++      price_abc: 'float',
++      price_def: 'float',
++      ratio: 'float',
+       timestamp: 'date',
++      upper_bound: 'float',
++      lower_bound: 'float',
++      trigger_alert: 'float',
+     };
+-
++ 
+     if (window.perspective && window.perspective.worker()) {
+       this.table = window.perspective.worker().table(schema);
+     }
+@@ -36,25 +39,27 @@ class Graph extends Component<IProps, {}> {
+       // Load the `table` in the `<perspective-viewer>` DOM reference.
+       elem.load(this.table);
+       elem.setAttribute('view', 'y_line');
+-      elem.setAttribute('column-pivots', '["stock"]');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+-      elem.setAttribute('columns', '["top_ask_price"]');
++      elem.setAttribute('columns', '["ratio", "lower_bound", "upper_bound", "trigger_alert"]');
+       elem.setAttribute('aggregates', JSON.stringify({
+-        stock: 'distinctcount',
+-        top_ask_price: 'avg',
+-        top_bid_price: 'avg',
++        price_abc: 'avg',
++        price_def: 'avg',
++        ratio: 'avg',
+         timestamp: 'distinct count',
++        upper_bound: 'avg',
++        lower_bound: 'avg',
++        trigger_alert: 'avg',
+       }));
+     }
+   }
+-
++ 
+   componentDidUpdate() {
+     if (this.table) {
+-      this.table.update(
++      this.table.update([
+         DataManipulator.generateRow(this.props.data),
+-      );
++      ]);
+     }
+   }
+ }
+-
++ 
+ export default Graph;
+-- 
+2.41.0.windows.1
+
