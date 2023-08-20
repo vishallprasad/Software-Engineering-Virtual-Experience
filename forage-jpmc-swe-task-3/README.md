@@ -1,3 +1,4 @@
+[<img align = right height = 50 width = 50 src = https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-512.png>](https://youtu.be/NCmYZhnNYzc)
 ### # Task 3: Display data visually for traders
 Aim: Use Perspective to create a chart for a trading dashboard
 
