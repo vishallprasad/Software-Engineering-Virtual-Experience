@@ -3,12 +3,14 @@
 Aim: Use Perspective to create a chart for a trading dashboard
 
 #### Prerequisite
-- Python Installation
-- PyCharm Installation
-- Git Installation
-- Nodejs Installation
+- [Python Installation](https://iamvishalprasad.blogspot.com/2023/06/python-installation.html#more)
+- [PyCharm Installation](https://iamvishalprasad.blogspot.com/2023/06/pycharm-installation.html#more)
+- [Git Installation](https://iamvishalprasad.blogspot.com/2023/06/git-installation.html#more)
+- [Visual Studio Code Installation](https://iamvishalprasad.blogspot.com/2023/06/visual-studio-code-installation.html#more)
+- [Nodejs Installation](https://iamvishalprasad.blogspot.com/2023/07/nodejs-installing.html#more)
+- [NVM Installation](https://iamvishalprasad.blogspot.com/2023/07/nvm-installing.html#more)
 - Visual C++ Build Environment Installation via Visual Studio Build Tools.
-  
+
 #### Visual Studio Installer Installation then run command
 ```ruby
 npm config set msvs_version 2017
