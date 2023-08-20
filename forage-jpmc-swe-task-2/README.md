@@ -1,3 +1,4 @@
+[<img align = right height = 50 width = 50 src = https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-512.png>](https://youtu.be/q3Xlzg2Gj_c)
 ### # Task 2: Use JPMorgan Chase & Co. frameworks and tools
 Aim: Implement the Perspective open source code in preparation for data visualisation
 
