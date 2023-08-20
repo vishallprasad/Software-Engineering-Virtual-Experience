@@ -1,3 +1,4 @@
+[<img align = right height = 50 width = 50 src = https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-512.png>](https://youtu.be/iCntrjJzyYc)
 ### # Task 1: Interface with a stock price data feed
 Aim: Interface with a stock price data feed and set up your system for analysis of the data
 
