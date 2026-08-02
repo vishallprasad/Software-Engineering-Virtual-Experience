@@ -1,14 +1,13 @@
-[<img align = right height = 50 width = 50 src = https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-512.png>](https://youtu.be/NCmYZhnNYzc)
 ### # Task 3: Display data visually for traders
 Aim: Use Perspective to create a chart for a trading dashboard
 
 #### Prerequisite
-- [Python Installation](https://iamvishalprasad.blogspot.com/2023/06/python-installation.html#more)
-- [PyCharm Installation](https://iamvishalprasad.blogspot.com/2023/06/pycharm-installation.html#more)
-- [Git Installation](https://iamvishalprasad.blogspot.com/2023/06/git-installation.html#more)
-- [Visual Studio Code Installation](https://iamvishalprasad.blogspot.com/2023/06/visual-studio-code-installation.html#more)
-- [Nodejs Installation](https://iamvishalprasad.blogspot.com/2023/07/nodejs-installing.html#more)
-- [NVM Installation](https://iamvishalprasad.blogspot.com/2023/07/nvm-installing.html#more)
+- [Python Installation](https://vishallprasad.blogspot.com/2023/06/python-installation.html#more)
+- [PyCharm Installation](https://vishallprasad.blogspot.com/2023/06/pycharm-installation.html#more)
+- [Git Installation](https://vishallprasad.blogspot.com/2023/06/git-installation.html#more)
+- [Visual Studio Code Installation](https://vishallprasad.blogspot.com/2023/06/visual-studio-code-installation.html#more)
+- [Nodejs Installation](https://vishallprasad.blogspot.com/2023/07/nodejs-installing.html#more)
+- [NVM Installation](https://vishallprasad.blogspot.com/2023/07/nvm-installing.html#more)
 - Visual C++ Build Environment Installation via Visual Studio Build Tools.
 
 #### Visual Studio Installer Installation then run command
